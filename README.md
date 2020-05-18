@@ -2,6 +2,15 @@
 
 ### Status: WIP
 
+This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop. 
+
+Currently running:
+
+| Component      | Version |
+| -------------- | ------- |
+| macOS Catalina | 10.15.4 |
+| OpenCore       | 0.5.8   |
+
 ## Hardware info
 
 | Component | Model                                   |
@@ -14,3 +23,34 @@
 | Camera    | 720p with Windows Hello IR sensor       |
 | WLAN      | Intel Wireless-AC 9560 2x2ac with BT5.0 |
 | Battery   | Single 50Wh                             |
+
+## Status
+
+### Working
+- [x] Keyboard. Volume control natively, brightness control with software
+- [x] Battery indicator
+- [x] Audio
+- [x] Ethernet
+- [x] iCloud services - iMessage, FaceTime, AppStore
+- [x] GPU acceleration
+- [x] Camera 
+- [x] Microphone
+- [x] Bluetooth
+- [x] Mac-like booting interface for multiboot. 
+
+### Working, sort of
+- [ ] Wifi
+- [ ] Trackpad and two finger gestures
+
+### Not working at the moment 
+- [ ] CPU power management
+- [ ] Sleep/wake
+- [ ] HDMI
+- [ ] Trackpad three finger gestures
+
+### Not tested
+- [ ] SD card reader
+- [ ] USB type C video
+- [ ] Sidecar
+- [ ] FileVault
+
