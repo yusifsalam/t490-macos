@@ -81,3 +81,16 @@ Currently running:
 | VooDooInput            | 1.0.5   | Trackpad driver, not used                |
 | VooDooPS2Controller    | 2.1.4   | Enable keyboard, mouse, trackpad         |
 | WhateverGreen          | 1.3.9   | Graphics                                 |
+
+## ACPI patches
+| Patch | Remark | 
+| - | -| 
+| DSDT | Patched DSTD file, original has compilation errors|
+| SSDT-AWAC | Fix AWAC |
+| SSDT-EC | Embedded Controller Rename, not used |
+| SSDT-GPIO | Trackpad fix |
+| SSDT-PLUG | Plugin fix, not working (?) |
+| SSDT-PNLF-CFL | Backlight fix |
+| SSDT-SBUS-MCHC | SBUS fix | 
+| SSDT-Thinkpad_Trackpad | Trackpad patch | 
+| SSDT |  Frequency vector for CPUFriend |
