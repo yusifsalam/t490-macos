@@ -39,18 +39,19 @@ Currently running:
 - [x] Mac-like booting interface for multiboot. 
 
 ### Working, sort of
-- [ ] Wifi
-- [ ] Trackpad and two finger gestures
-
-### Not working at the moment 
+- [ ] Wifi works but requires a kext with hardcoded ssid and password, upload speed is non-existent
+- [ ] Trackpad and gestures
 - [ ] CPU power management
 - [ ] Sleep/wake
+
+### Not working at the moment 
 - [ ] HDMI
-- [ ] Trackpad three finger gestures
+- [ ] SD card reader
+
 
 ### Not tested
-- [ ] SD card reader
 - [ ] USB type C video
+- [ ] Thunderbolt
 - [ ] Sidecar
 - [ ] FileVault
 
