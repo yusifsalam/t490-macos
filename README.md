@@ -37,19 +37,20 @@ Currently running:
 - [x] Camera
 - [x] Microphone
 - [x] Bluetooth
-- [x] Mac-like booting interface for multiboot.
+- [x] Mac-like booting interface for multiboot
+- [x] Sleep/wake
 
 ### Working, sort of
 
 - [ ] Wifi works but requires a kext with hardcoded ssid and password, upload speed is non-existent
 - [ ] Trackpad and gestures
 - [ ] CPU power management
-- [ ] Sleep/wake
 
 ### Not working at the moment
 
 - [ ] HDMI
 - [ ] SD card reader
+- [ ] Audio jack 
 
 ### Not tested
 
