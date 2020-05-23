@@ -83,7 +83,6 @@ Currently running:
 | USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
 | USBMap                 | -       | Inject only mapped USB                   |
 | VirtualSMC             | 1.1.4   | SMC chip emulation                       |
-| VooDooInput            | 1.0.5   | Trackpad driver, not used                |
 | VooDooPS2Controller    | 2.1.4   | Enable keyboard, mouse, trackpad         |
 | WhateverGreen          | 1.3.9   | Graphics                                 |
 
@@ -95,7 +94,7 @@ Currently running:
 | SSDT-AWAC              | Fix AWAC                                           |
 | SSDT-EC                | Embedded Controller Rename, not used               |
 | SSDT-GPIO              | Trackpad fix                                       |
-| SSDT-PLUG              | Plugin fix, not working (?)                        |
+| SSDT-PLUG              | x86 plugin injection fix                           |
 | SSDT-PNLF-CFL          | Backlight fix                                      |
 | SSDT-SBUS-MCHC         | SBUS fix                                           |
 | SSDT-Thinkpad_Trackpad | Trackpad patch                                     |
