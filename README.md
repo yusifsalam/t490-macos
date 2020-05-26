@@ -93,7 +93,6 @@ Currently running:
 | ---------------------- | -------------------------------------------------- |
 | DSDT                   | Patched DSTD file, original has compilation errors |
 | SSDT-AWAC              | Fix AWAC                                           |
-| SSDT-EC                | Embedded Controller Rename, not used               |
 | SSDT-GPIO              | Trackpad fix                                       |
 | SSDT-HPET              | Fix irq conflicts                                  |
 | SSDT-PLUG              | x86 plugin injection fix                           |
