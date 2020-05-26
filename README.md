@@ -69,6 +69,7 @@ Currently running:
 | ---------------------- | ------- | ---------------------------------------- |
 | AppleALC               | 1.4.9   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.0   | Power management                         |
+| CPUFriendFriend        | -       | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.0.3   | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.0.3   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
@@ -94,9 +95,9 @@ Currently running:
 | SSDT-AWAC              | Fix AWAC                                           |
 | SSDT-EC                | Embedded Controller Rename, not used               |
 | SSDT-GPIO              | Trackpad fix                                       |
+| SSDT-HPET              | Fix irq conflicts                                  |
 | SSDT-PLUG              | x86 plugin injection fix                           |
 | SSDT-PNLF-CFL          | Backlight fix                                      |
 | SSDT-SBUS-MCHC         | SBUS fix                                           |
 | SSDT-Thinkpad_Trackpad | Trackpad patch                                     |
 | SSDT-USBX              | USBX patch                                         |
-| SSDT                   | Frequency vector for CPUFriend                     |
