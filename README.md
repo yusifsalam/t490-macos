@@ -10,7 +10,7 @@ Currently running:
 
 | Component      | Version |
 | -------------- | ------- |
-| macOS Catalina | 10.15.4 |
+| macOS Catalina | 10.15.5 |
 | OpenCore       | 0.5.8   |
 
 ## Hardware info
