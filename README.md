@@ -69,12 +69,12 @@ Currently running:
 | ---------------------- | ------- | ---------------------------------------- |
 | AppleALC               | 1.4.9   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.0   | Power management                         |
-| CPUFriendFriend        | -       | Frequency vector for CPUFriend           |
+| CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.0.3   | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.0.3   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
 | itlwm                  | -       | Wifi fix, not for everyday use           |
-| Lilu                   | 1.4.4   |                                          |
+| Lilu                   | 1.4.4   | Kext patcher                             |
 | NoTouchID              | 1.0.3   | Disable TouchID                          |
 | NVMEFix                | 1.0.2   | Fix for NVME SSDs                        |
 | SMCBatteryManager      | 1.0     | Battery indicator                        |
