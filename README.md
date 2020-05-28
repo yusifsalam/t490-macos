@@ -43,12 +43,12 @@ Currently running:
 - [x] Mac-like booting interface for multiboot
 - [x] Sleep/wake
 - [x] HDMI video
+- [x] Trackpad and gestures
+- [x] Native CPU power management
 
 ### Working, sort of
 
 - [ ] Wifi works but requires a kext with hardcoded ssid and password, upload speed is non-existent
-- [ ] Trackpad and gestures
-- [ ] CPU power management
 
 ### Not working at the moment
 
@@ -89,14 +89,19 @@ Currently running:
 
 ## ACPI patches
 
-| Patch                  | Remark                                             |
-| ---------------------- | -------------------------------------------------- |
-| DSDT                   | Patched DSTD file, original has compilation errors |
-| SSDT-AWAC              | Fix AWAC                                           |
-| SSDT-GPIO              | Trackpad fix                                       |
-| SSDT-HPET              | Fix irq conflicts                                  |
-| SSDT-PLUG              | x86 plugin injection fix                           |
-| SSDT-PNLF-CFL          | Backlight fix                                      |
-| SSDT-SBUS-MCHC         | SBUS fix                                           |
-| SSDT-Thinkpad_Trackpad | Trackpad patch                                     |
-| SSDT-USBX              | USBX patch                                         |
+| Patch                  | Remark                         |
+| ---------------------- | ------------------------------ |
+| SSDT-AWAC              | Fix AWAC                       |
+| SSDT-BAT               | Fix battery indicator          |
+| SSDT-EXT1-FixShutdown  | Fix shutdown on reboot         |
+| SSDT-EXT3-LedReset-TP  | Fix LED not working after wake |
+| SSDT-EXT4-WakeScreen   | Fix screen not waking          |
+| SSDT-GPIO              | Trackpad fix                   |
+| SSDT-GPRW              | Fix immediate wake after sleep |
+| SSDT-HPET              | Fix irq conflicts              |
+| SSDT-PLUG              | x86 plugin injection fix       |
+| SSDT-PNLF-CFL          | Backlight fix                  |
+| SSDT-PTSWAK            | Fix sleep issues               |
+| SSDT-SBUS-MCHC         | SBUS fix                       |
+| SSDT-Thinkpad_Trackpad | Trackpad patch                 |
+| SSDT-USBX              | USBX patch                     |
