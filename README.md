@@ -105,3 +105,11 @@ Currently running:
 | SSDT-SBUS-MCHC         | SBUS fix                       |
 | SSDT-Thinkpad_Trackpad | Trackpad patch                 |
 | SSDT-USBX              | USBX patch                     |
+
+## CREDITS
+- [Acidanthera](https://github.com/acidanthera) 
+- [Dortania OC guide](https://dortania.github.io/vanilla-laptop-guide/)
+- [Rehabman's battery patch guide](https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/) and [Rehabman's ACPI hotpatching guide](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
+- [CorpNewt's tools](https://github.com/corpnewt)
+- [Daliansky's OC-little repo](https://github.com/daliansky/OC-little)
+- [Tylernguyen's x1c-hackintosh repo](https://github.com/tylernguyen/x1c6-hackintosh)
