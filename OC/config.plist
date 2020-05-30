@@ -1291,13 +1291,13 @@
 				<key>Auxiliary</key>
 				<false/>
 				<key>Comment</key>
-				<string>Not signed for security reasons</string>
+				<string>Arch Linux</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Name</key>
-				<string>CustomOS</string>
+				<string>Arch</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+				<string>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,87-C0-C3-44-8B-44-1B-00)/HD(2,GPT,0BA84AC6-FA6D-4945-ACC6-D865DCF5F680,0xD7000,0x6C000)/\EFI\systemd\systemd-bootx64.efi</string>
 			</dict>
 		</array>
 		<key>Security</key>
