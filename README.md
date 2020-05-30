@@ -42,7 +42,6 @@ Currently running:
 - [x] Bluetooth
 - [x] Mac-like booting interface for multiboot
 - [x] Sleep/wake
-- [x] HDMI video
 - [x] Trackpad and gestures
 - [x] Native CPU power management
 
@@ -54,10 +53,11 @@ Currently running:
 
 - [ ] SD card reader - won't fix, since I don't use it
 - [ ] Audio jack - won't fix, since I don't use it
+- [ ] HDMI video
+- [ ] HDMI audio
 
 ### Not tested
 
-- [ ] HDMI audio
 - [ ] USB type C video
 - [ ] Thunderbolt
 - [ ] Sidecar
