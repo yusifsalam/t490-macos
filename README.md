@@ -12,6 +12,8 @@ Currently running:
 | -------------- | ------- |
 | macOS Catalina | 10.15.5 |
 | OpenCore       | 0.5.8   |
+| BIOS version   | 0.1.65  |
+| EC version     | 0.1.16  |
 
 ## Hardware info
 
