@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), although it is very possible that battery life will improve after time, as spotlight indexing and photo library analysis complete their first run - I haven't been using this macOS install long enough to know. Network interfaces are limited to ethernet and tethered connection via phone hotspot, since the wifi driver is not stable enough as a daily driver and unfortunately the wifi card is soldered onto the motherboard.
+The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. Network interfaces are limited to ethernet and tethered connection via phone hotspot, since the wifi driver is not stable enough as a daily driver and unfortunately the wifi card is soldered onto the motherboard.
 
 Currently running:
 
@@ -75,13 +75,13 @@ Currently running:
 | IntelBluetoothFirmware | 1.0.3   | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.0.3   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
-| itlwm                  | 1.0.1       | Wifi fix, not for everyday use           |
+| itlwm                  | 1.0.1   | Wifi fix, not for everyday use           |
 | Lilu                   | 1.4.5   | Kext patcher                             |
 | NoTouchID              | 1.0.3   | Disable TouchID                          |
 | NVMEFix                | 1.0.2   | Fix for NVME SSDs                        |
 | SMCBatteryManager      | 1.0     | Battery indicator                        |
 | SMCLightSensor         | 1.0     | Ambient light sensor                     |
-| SMCProcessor           | 1.1.5     | CPU temp monitoring                      |
+| SMCProcessor           | 1.1.5   | CPU temp monitoring                      |
 | SMCSuperIO             | 1.1.5   | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
 | USBMap                 | -       | Inject only mapped USB                   |
@@ -109,7 +109,8 @@ Currently running:
 | SSDT-USBX              | USBX patch                     |
 
 ## CREDITS
-- [Acidanthera](https://github.com/acidanthera) 
+
+- [Acidanthera](https://github.com/acidanthera)
 - [Dortania OC guide](https://dortania.github.io/vanilla-laptop-guide/)
 - [Rehabman's battery patch guide](https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/) and [Rehabman's ACPI hotpatching guide](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
 - [CorpNewt's tools](https://github.com/corpnewt)
