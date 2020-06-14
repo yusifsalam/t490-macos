@@ -11,7 +11,7 @@ Currently running:
 | Component      | Version |
 | -------------- | ------- |
 | macOS Catalina | 10.15.5 |
-| OpenCore       | 0.5.8   |
+| OpenCore       | 0.5.9   |
 | BIOS version   | 0.1.66  |
 | EC version     | 0.1.19  |
 
@@ -49,7 +49,7 @@ Currently running:
 
 ### Working, sort of
 
-- [ ] Wifi works but requires a kext with hardcoded ssid and password, upload speed is non-existent
+- [ ] Wifi works but requires a kext with hardcoded ssid and password
 
 ### Not working at the moment
 
@@ -69,25 +69,25 @@ Currently running:
 
 | Kext                   | Version | Remark                                   |
 | ---------------------- | ------- | ---------------------------------------- |
-| AppleALC               | 1.4.9   | Fixes onboard audio                      |
+| AppleALC               | 1.5.0   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.0   | Power management                         |
 | CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.0.3   | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.0.3   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
-| itlwm                  | -       | Wifi fix, not for everyday use           |
-| Lilu                   | 1.4.4   | Kext patcher                             |
+| itlwm                  | 1.0.1       | Wifi fix, not for everyday use           |
+| Lilu                   | 1.4.5   | Kext patcher                             |
 | NoTouchID              | 1.0.3   | Disable TouchID                          |
 | NVMEFix                | 1.0.2   | Fix for NVME SSDs                        |
 | SMCBatteryManager      | 1.0     | Battery indicator                        |
 | SMCLightSensor         | 1.0     | Ambient light sensor                     |
-| SMCProcessor           | 1.0     | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.4   | Monitor fan speed, not working           |
+| SMCProcessor           | 1.1.5     | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.5   | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
 | USBMap                 | -       | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.4   | SMC chip emulation                       |
+| VirtualSMC             | 1.1.5   | SMC chip emulation                       |
 | VooDooPS2Controller    | 2.1.4   | Enable keyboard, mouse, trackpad         |
-| WhateverGreen          | 1.3.9   | Graphics                                 |
+| WhateverGreen          | 1.4.0   | Graphics                                 |
 
 ## ACPI patches
 
