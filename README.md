@@ -108,6 +108,22 @@ Currently running:
 | SSDT-Thinkpad_Trackpad | Trackpad patch                 |
 | SSDT-USBX              | USBX patch                     |
 
+## BIOS settings
+- Disable secure chip
+- Enable Intel Virtualization and VT-d
+- Disable secure boot and fast boot
+- Disable Intel SGX control
+- Disable Device Guard
+- Disable wake on LAN/thunderbolt
+- Set boot mode to UEFI only, disable CSM support
+
+## Post-install
+- Disable hibernation, since it doesn't work properly on hackintoshes
+- Make your own USB map kext
+- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
+- (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
+- (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
+
 ## CREDITS
 
 - [Acidanthera](https://github.com/acidanthera)
