@@ -120,7 +120,8 @@ Currently running:
 ## Post-install
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
-- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
+- Put your wifi ssid and password inside itlwm kext's Info.plist to get working wifi
+- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 
