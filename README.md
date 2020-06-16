@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. Network interfaces are limited to ethernet and tethered connection via phone hotspot, since the wifi driver is not stable enough as a daily driver and unfortunately the wifi card is soldered onto the motherboard.
+The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds.
 
 Currently running:
 
