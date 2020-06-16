@@ -53,10 +53,11 @@ Currently running:
 
 ### Not working at the moment
 
-- [ ] SD card reader - won't fix, since I don't use it
-- [ ] Audio jack - won't fix, since I don't use it
+- [ ] SD card reader - I don't use it so won't fix but will merge pull requests
+- [ ] Audio jack - I don't use it so won't fix but will merge pull requests
 - [ ] HDMI video
 - [ ] HDMI audio
+- [ ] AirDrop, Continuity - wifi card can't be replaced, so this is unlikely to ever work
 
 ### Not tested
 
