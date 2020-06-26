@@ -65,6 +65,7 @@ Currently running:
 - [ ] Thunderbolt
 - [ ] Sidecar
 - [ ] FileVault
+- [ ] DRM content playback - I don't have Netflix or AppleTV+
 
 ## Kexts
 
@@ -119,6 +120,7 @@ Currently running:
 - Set boot mode to UEFI only, disable CSM support
 
 ## Post-install
+- Install [Heliport](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Put your wifi ssid and password inside itlwm kext's Info.plist to get working wifi
@@ -134,4 +136,5 @@ Currently running:
 - [Rehabman's battery patch guide](https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/) and [Rehabman's ACPI hotpatching guide](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
 - [CorpNewt's tools](https://github.com/corpnewt)
 - [Daliansky's OC-little repo](https://github.com/daliansky/OC-little)
-- [Tylernguyen's x1c-hackintosh repo](https://github.com/tylernguyen/x1c6-hackintosh)
+- [Tyler Nguyen's x1c-hackintosh repo](https://github.com/tylernguyen/x1c6-hackintosh)
+- [Vojtěch Jungmann's T480-OpenCore-Hackintosh repo](https://github.com/EETagent/T480-OpenCore-Hackintosh)
