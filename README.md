@@ -29,6 +29,8 @@ Currently running:
 | Battery   | Single 3-cell 50Wh                      |
 | Touchpad  | Synaptics                               |
 
+Note on NVME storage: Samsung PM981 drives will not work out of the box if at all, consider replacing the drive if you have one ([issue](https://github.com/yusifsalam/t490-macos/issues/3))
+
 ## Status
 
 ### Working
