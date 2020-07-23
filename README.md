@@ -48,22 +48,23 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Sleep/wake
 - [x] Trackpad and gestures
 - [x] Native CPU power management
+- [x] HDMI video 1080p, 1440p
 
 ### Working, sort of
 
-- [ ] Wifi works but requires a kext with hardcoded ssid and password
+- [ ] Wifi works but is slow
 
 ### Not working at the moment
 
 - [ ] SD card reader - I don't use it so won't fix but will merge pull requests
 - [ ] Audio jack - I don't use it so won't fix but will merge pull requests
-- [ ] HDMI video
-- [ ] HDMI audio
+- [ ] HDMI video at 4K
 - [ ] AirDrop, Continuity - wifi card can't be replaced, so this is unlikely to ever work
 
 ### Not tested
 
 - [ ] USB type C video
+- [ ] HDMI audio
 - [ ] Thunderbolt
 - [ ] Sidecar
 - [ ] FileVault
@@ -109,7 +110,6 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-PNLF-CFL          | Backlight fix                  |
 | SSDT-PTSWAK            | Fix sleep issues               |
 | SSDT-SBUS-MCHC         | SBUS fix                       |
-| SSDT-Thinkpad_Trackpad | Trackpad patch                 |
 | SSDT-USBX              | USBX patch                     |
 
 ## BIOS settings
@@ -122,10 +122,10 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - Set boot mode to UEFI only, disable CSM support
 
 ## Post-install
-- Install [Heliport](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
+- Install [HeliPort](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
-- Put your wifi ssid and password inside itlwm kext's Info.plist to get working wifi
+- Put your wifi ssid and password inside itlwm kext's Info.plist to automatically connect to wifi without using HeliPort
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz 
 - Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
