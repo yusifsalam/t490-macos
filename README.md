@@ -77,8 +77,8 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | AppleALC               | 1.5.0   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.0   | Power management                         |
 | CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.0.3   | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.0.3   | Companion for IntelBluetoothFirmware     |
+| IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
 | itlwm                  | 1.0.1   | Wifi fix, not for everyday use           |
 | Lilu                   | 1.4.5   | Kext patcher                             |
