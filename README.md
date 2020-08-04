@@ -11,7 +11,7 @@ Currently running:
 | Component      | Version |
 | -------------- | ------- |
 | macOS Catalina | 10.15.6 |
-| OpenCore       | 0.5.9   |
+| OpenCore       | 0.6.0   |
 | BIOS version   | 0.1.66  |
 | EC version     | 0.1.19  |
 
