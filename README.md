@@ -91,7 +91,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
 | USBMap                 | -       | Inject only mapped USB                   |
 | VirtualSMC             | 1.1.5   | SMC chip emulation                       |
-| VooDooPS2Controller    | 2.1.4   | Enable keyboard, mouse, trackpad         |
+| VoodooPS2Controller    | 2.1.6   | Enable keyboard, mouse, trackpad         |
 | WhateverGreen          | 1.4.0   | Graphics                                 |
 
 ## ACPI patches
