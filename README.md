@@ -27,7 +27,7 @@ Currently running:
 | Camera    | 720p with Windows Hello IR sensor       |
 | WLAN      | Intel Wireless-AC 9560 2x2ac with BT5.0 |
 | Battery   | Single 3-cell 50Wh                      |
-| Touchpad  | Synaptics                               |
+| Touchpad  | Synaptics TM3471-010                    |
 
 Note on NVME storage: Samsung PM981 drives will not work out of the box if at all, consider replacing the drive if you have one ([issue](https://github.com/yusifsalam/t490-macos/issues/3))
 
