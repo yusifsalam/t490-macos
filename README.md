@@ -123,9 +123,9 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ## Post-install
 - Install [HeliPort](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
+- Put your wifi ssid and password inside itlwm kext's Info.plist to automatically connect to wifi without using HeliPort
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
-- Put your wifi ssid and password inside itlwm kext's Info.plist to automatically connect to wifi without using HeliPort
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz 
 - Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
@@ -134,7 +134,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 ## CREDITS
 
 - [Acidanthera](https://github.com/acidanthera)
-- [Dortania OC guide](https://dortania.github.io/vanilla-laptop-guide/)
+- [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [Rehabman's battery patch guide](https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/) and [Rehabman's ACPI hotpatching guide](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
 - [CorpNewt's tools](https://github.com/corpnewt)
 - [Daliansky's OC-little repo](https://github.com/daliansky/OC-little)
