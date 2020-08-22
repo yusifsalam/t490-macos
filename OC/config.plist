@@ -1179,17 +1179,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>XXX</string>
+			<string>XXXXXXXXXXXXXXXXX</string>
 			<key>ROM</key>
-			<data>XXX</data>
+			<data>XXXXXXXX</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>XXX</string>
+			<string>XXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>XXX</string>
+			<string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
