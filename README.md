@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds.
+The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases.
 
 Currently running:
 
@@ -52,7 +52,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Working, sort of
 
-- [ ] Wifi works but is slow
+- [ ] Wifi works but not at full speeds
 
 ### Not working at the moment
 
@@ -112,7 +112,10 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-SBUS-MCHC         | SBUS fix                       |
 | SSDT-USBX              | USBX patch                     |
 
-## BIOS settings
+## Pre-Install & BIOS settings
+First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update to the latest firmware (the easiest way is to use fwupd on linux). 
+
+Then do the following BIOS settings:
 - Disable secure chip
 - Enable Intel Virtualization and VT-d
 - Disable secure boot and fast boot
@@ -121,7 +124,10 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - Disable wake on LAN/thunderbolt
 - Set boot mode to UEFI only, disable CSM support
 
+Now you can install macOS on your APFS or HFS+ formatted drive. 
+
 ## Post-install
+- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Install [HeliPort](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
 - Put your wifi ssid and password inside itlwm kext's Info.plist to automatically connect to wifi without using HeliPort
 - Disable hibernation, since it doesn't work properly on hackintoshes
