@@ -48,23 +48,22 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Sleep/wake
 - [x] Trackpad and gestures
 - [x] Native CPU power management
-- [x] HDMI video 1080p, 1440p
+- [x] HDMI video and audio 1080p, 1440p
 
 ### Working, sort of
 
 - [ ] Wifi works but not at full speeds
+- [ ] Audio jack - glitches after wake from sleep. I don't use it so won't fix but will merge pull requests
 
 ### Not working at the moment
 
 - [ ] SD card reader - I don't use it so won't fix but will merge pull requests
-- [ ] Audio jack - I don't use it so won't fix but will merge pull requests
-- [ ] HDMI video at 4K
 - [ ] AirDrop, Continuity - wifi card can't be replaced, so this is unlikely to ever work
 
 ### Not tested
 
 - [ ] USB type C video
-- [ ] HDMI audio
+- [ ] HDMI video at 4K
 - [ ] Thunderbolt
 - [ ] Sidecar
 - [ ] FileVault
