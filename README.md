@@ -48,7 +48,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Sleep/wake
 - [x] Trackpad and gestures
 - [x] Native CPU power management
-- [x] HDMI video and audio 1080p, 1440p
+- [x] HDMI video and audio up to 1440p
 
 ### Working, sort of
 
@@ -57,13 +57,13 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Not working at the moment
 
+- [ ] HDMI video at 4K
 - [ ] SD card reader - I don't use it so won't fix but will merge pull requests
 - [ ] AirDrop, Continuity - wifi card can't be replaced, so this is unlikely to ever work
 
 ### Not tested
 
 - [ ] USB type C video
-- [ ] HDMI video at 4K
 - [ ] Thunderbolt
 - [ ] Sidecar
 - [ ] FileVault
@@ -80,18 +80,18 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
 | itlwm                  | 1.1.0 alpha | Wifi fix, not for everyday use           |
-| Lilu                   | 1.4.7       | Kext patcher                             |
+| Lilu                   | 1.4.8       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.0         | Battery indicator                        |
-| SMCLightSensor         | 1.0         | Ambient light sensor                     |
-| SMCProcessor           | 1.1.6       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.6       | Monitor fan speed, not working           |
+| SMCBatteryManager      | 1.1.7         | Battery indicator                        |
+| SMCLightSensor         | 1.1.7         | Ambient light sensor                     |
+| SMCProcessor           | 1.1.7       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.7       | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.6       | SMC chip emulation                       |
+| VirtualSMC             | 1.1.7       | SMC chip emulation                       |
 | VoodooPS2Controller    | 2.1.6       | Enable keyboard, mouse, trackpad         |
-| WhateverGreen          | 1.4.2       | Graphics                                 |
+| WhateverGreen          | 1.4.3       | Graphics                                 |
 
 ## ACPI patches
 
