@@ -8,8 +8,8 @@ The compatibility is good for the most part, most of the stuff works like it wou
 
 Currently running:
 
-| Component      | Version |
-| -------------- | ------- |
+| Component      | Version           |
+| -------------- | ----------------- |
 | macOS Catalina | 10.15.6 (19G2021) |
 | OpenCore       | 0.6.1             |
 | BIOS version   | 0.1.66            |
@@ -71,50 +71,52 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ## Kexts
 
-| Kext                   | Version | Remark                                   |
-| ---------------------- | ------- | ---------------------------------------- |
-| AppleALC               | 1.5.0   | Fixes onboard audio                      |
-| CPUFriend              | 1.2.2   | Power management                         |
-| CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware     |
-| IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
-| itlwm                  | 1.0.1   | Wifi fix, not for everyday use           |
-| Lilu                   | 1.4.7   | Kext patcher                             |
-| NoTouchID              | 1.0.4   | Disable TouchID                          |
-| NVMEFix                | 1.0.4   | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.0     | Battery indicator                        |
-| SMCLightSensor         | 1.0     | Ambient light sensor                     |
-| SMCProcessor           | 1.1.6   | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.6   | Monitor fan speed, not working           |
-| USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
-| USBMap                 | -       | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.6   | SMC chip emulation                       |
-| VoodooPS2Controller    | 2.1.6   | Enable keyboard, mouse, trackpad         |
-| WhateverGreen          | 1.4.2   | Graphics                                 |
+| Kext                   | Version     | Remark                                   |
+| ---------------------- | ----------- | ---------------------------------------- |
+| AppleALC               | 1.5.0       | Fixes onboard audio                      |
+| CPUFriend              | 1.2.2       | Power management                         |
+| CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
+| IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
+| IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
+| itlwm                  | 1.1.0 alpha | Wifi fix, not for everyday use           |
+| Lilu                   | 1.4.7       | Kext patcher                             |
+| NoTouchID              | 1.0.4       | Disable TouchID                          |
+| NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
+| SMCBatteryManager      | 1.0         | Battery indicator                        |
+| SMCLightSensor         | 1.0         | Ambient light sensor                     |
+| SMCProcessor           | 1.1.6       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.6       | Monitor fan speed, not working           |
+| USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
+| USBMap                 | -           | Inject only mapped USB                   |
+| VirtualSMC             | 1.1.6       | SMC chip emulation                       |
+| VoodooPS2Controller    | 2.1.6       | Enable keyboard, mouse, trackpad         |
+| WhateverGreen          | 1.4.2       | Graphics                                 |
 
 ## ACPI patches
 
-| Patch                  | Remark                         |
-| ---------------------- | ------------------------------ |
-| SSDT-AWAC              | Fix AWAC                       |
-| SSDT-BAT               | Fix battery indicator          |
-| SSDT-EXT1-FixShutdown  | Fix shutdown on reboot         |
-| SSDT-EXT3-LedReset-TP  | Fix LED not working after wake |
-| SSDT-EXT4-WakeScreen   | Fix screen not waking          |
-| SSDT-GPIO              | Trackpad fix                   |
-| SSDT-GPRW              | Fix immediate wake after sleep |
-| SSDT-HPET              | Fix irq conflicts              |
-| SSDT-PLUG              | x86 plugin injection fix       |
-| SSDT-PNLF-CFL          | Backlight fix                  |
-| SSDT-PTSWAK            | Fix sleep issues               |
-| SSDT-SBUS-MCHC         | SBUS fix                       |
-| SSDT-USBX              | USBX patch                     |
+| Patch                 | Remark                         |
+| --------------------- | ------------------------------ |
+| SSDT-AWAC             | Fix AWAC                       |
+| SSDT-BAT              | Fix battery indicator          |
+| SSDT-EXT1-FixShutdown | Fix shutdown on reboot         |
+| SSDT-EXT3-LedReset-TP | Fix LED not working after wake |
+| SSDT-EXT4-WakeScreen  | Fix screen not waking          |
+| SSDT-GPIO             | Trackpad fix                   |
+| SSDT-GPRW             | Fix immediate wake after sleep |
+| SSDT-HPET             | Fix irq conflicts              |
+| SSDT-PLUG             | x86 plugin injection fix       |
+| SSDT-PNLF-CFL         | Backlight fix                  |
+| SSDT-PTSWAK           | Fix sleep issues               |
+| SSDT-SBUS-MCHC        | SBUS fix                       |
+| SSDT-USBX             | USBX patch                     |
 
 ## Pre-Install & BIOS settings
-First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update to the latest firmware (the easiest way is to use fwupd on linux). 
+
+First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update to the latest firmware (the easiest way is to use fwupd on linux).
 
 Then do the following BIOS settings:
+
 - Disable secure chip
 - Enable Intel Virtualization and VT-d
 - Disable secure boot and fast boot
@@ -123,16 +125,17 @@ Then do the following BIOS settings:
 - Disable wake on LAN/thunderbolt
 - Set boot mode to UEFI only, disable CSM support
 
-Now you can install macOS on your APFS or HFS+ formatted drive. 
+Now you can install macOS on your APFS or HFS+ formatted drive.
 
 ## Post-install
+
 - [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Install [HeliPort](https://github.com/zxystd/HeliPort) to control the wifi kext from within macOS
 - Put your wifi ssid and password inside itlwm kext's Info.plist to automatically connect to wifi without using HeliPort
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
-- Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz 
-- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. 
+- Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
+- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse.
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 
