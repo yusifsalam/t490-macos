@@ -52,11 +52,15 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Native CPU power management
 - [x] HDMI video and audio up to 1440p
 - [x] Handoff, continuity
+- [x] FileVault
+- [x] DRM content playback (Netflix, Apple TV+)
+- [x] Thunderbolt - works with Lenovo Thinkpad Thunderbolt 3 Dock (tested Ethernet, display over DisplayPort and HDMI, USB ports)
 
 ### Working, sort of
 
 - [ ] Wifi works but not at full speeds
 - [ ] Audio jack - glitches after wake from sleep. I don't use it so won't fix but will merge pull requests
+- [ ] USB-C video output works, but no audio
 
 ### Not working at the moment
 
@@ -66,16 +70,13 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Not tested
 
-- [ ] USB type C video
-- [ ] Thunderbolt
 - [ ] Sidecar
-- [ ] FileVault
-- [ ] DRM content playback - I don't have Netflix or AppleTV+
 
 ## Kexts
 
 | Kext                   | Version | Remark                                       |
 | ---------------------- | ------- | -------------------------------------------- |
+| AirportItlwm           | 1.1.0 a | Integrates Itlwm with native WiFi picker     |
 | AppleALC               | 1.5.0   | Fixes onboard audio                          |
 | CPUFriend              | 1.2.2   | Power management                             |
 | CPUFriendDataProvider  | -       | Frequency vector for CPUFriend               |
