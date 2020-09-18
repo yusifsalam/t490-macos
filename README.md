@@ -135,14 +135,14 @@ Then do the following BIOS settings:
 Now you can install macOS on your APFS or HFS+ formatted drive.
 
 ## Post-install
-- Adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI) [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
-- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse.
+- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. Big Sur compatibility not confirmed 
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
+- (Optional) [Monitor Control](https://github.com/MonitorControl/MonitorControl) to adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI
 
 ## CREDITS
 
