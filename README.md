@@ -71,6 +71,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 ### Not tested
 
 - [ ] Sidecar
+- [ ] AirPlay
 
 ## Kexts
 
@@ -150,6 +151,7 @@ Now you can install macOS on your APFS or HFS+ formatted drive.
 - [Rehabman's battery patch guide](https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/) and [Rehabman's ACPI hotpatching guide](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
 - [CorpNewt's tools](https://github.com/corpnewt)
 - [OpenWireless and itlwm](https://github.com/OpenIntelWireless/itlwm)
+- [VoodooRMI](https://github.com/VoodooSMBus/VoodooRMI)
 - [Daliansky's OC-little repo](https://github.com/daliansky/OC-little)
 - [Tyler Nguyen's x1c-hackintosh repo](https://github.com/tylernguyen/x1c6-hackintosh)
 - [Vojtěch Jungmann's T480-OpenCore-Hackintosh repo](https://github.com/EETagent/T480-OpenCore-Hackintosh)
