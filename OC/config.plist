@@ -1358,13 +1358,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 msgbuf=1048576</string>
+				<string>keepsyms=1 debug=0x100 alcid=11 -wegnoegpu</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
-				<data>cnUtUlU6MjUy</data>
+				<string>en-US:0</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
