@@ -4,9 +4,8 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest itlwm kext even Handoff and continuity features are working, except for AirDrop. 
+The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest itlwm kext even Handoff and continuity features are working, except for AirDrop.
 
-There are two config files included - config.plist uses VoodooRMI trackpad driver, while config_ps2.plist uses the VoodooPS2 trackpad driver. VoodooRMI driver has much better gesture support and is overall a better experience, but unfortunately the trackpad physical button does not work with it (the trackpoint buttons above the trackpad do work), which is why the PS2 driver config is also included for those that really want the trackpad button.
 
 Currently running:
 
@@ -52,6 +51,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Native CPU power management
 - [x] HDMI video and audio up to 1440p
 - [x] Handoff, continuity
+- [x] AirPlay
 - [x] FileVault
 - [x] DRM content playback (Netflix, Apple TV+)
 - [x] Thunderbolt - works with Lenovo Thinkpad Thunderbolt 3 Dock (tested Ethernet, display over DisplayPort and HDMI, USB ports)
@@ -71,34 +71,33 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 ### Not tested
 
 - [ ] Sidecar
-- [ ] AirPlay
 
 ## Kexts
 
-| Kext                   | Version | Remark                                       |
-| ---------------------- | ------- | -------------------------------------------- |
-| AirportItlwm           | 1.1.0 a | Integrates Itlwm with native WiFi picker     |
-| AppleALC               | 1.5.0   | Fixes onboard audio                          |
-| CPUFriend              | 1.2.2   | Power management                             |
-| CPUFriendDataProvider  | -       | Frequency vector for CPUFriend               |
-| IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                              |
-| IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware         |
-| IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                               |
-| itlwm                  | 1.1.0   | WiFi kext                                    |
-| Lilu                   | 1.4.8   | Kext patcher                                 |
-| NoTouchID              | 1.0.4   | Disable TouchID                              |
-| NVMEFix                | 1.0.4   | Fix for NVME SSDs                            |
-| SMCBatteryManager      | 1.1.7   | Battery indicator                            |
-| SMCLightSensor         | 1.1.7   | Ambient light sensor                         |
-| SMCProcessor           | 1.1.7   | CPU temp monitoring                          |
-| SMCSuperIO             | 1.1.7   | Monitor fan speed, not working               |
-| USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting     |
-| USBMap                 | -       | Inject only mapped USB                       |
-| VirtualSMC             | 1.1.7   | SMC chip emulation                           |
-| VoodooRMI              | 1.1     | Trackpad driver                              |
-| VoodooSMBUS            | 3.0 dev | SMBUS driver                                 |
-| VoodooPS2Controller    | 2.1.6   | Enable keyboard, alternative trackpad driver |
-| WhateverGreen          | 1.4.3   | Graphics                                     |
+| Kext                   | Version | Remark                                   |
+| ---------------------- | ------- | ---------------------------------------- |
+| AirportItlwm           | 1.1.0 a | Integrates Itlwm with native WiFi picker |
+| AppleALC               | 1.5.0   | Fixes onboard audio                      |
+| CPUFriend              | 1.2.2   | Power management                         |
+| CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
+| IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware     |
+| IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
+| itlwm                  | 1.1.0   | WiFi kext                                |
+| Lilu                   | 1.4.8   | Kext patcher                             |
+| NoTouchID              | 1.0.4   | Disable TouchID                          |
+| NVMEFix                | 1.0.4   | Fix for NVME SSDs                        |
+| SMCBatteryManager      | 1.1.7   | Battery indicator                        |
+| SMCLightSensor         | 1.1.7   | Ambient light sensor                     |
+| SMCProcessor           | 1.1.7   | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.7   | Monitor fan speed, not working           |
+| USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
+| USBMap                 | -       | Inject only mapped USB                   |
+| VirtualSMC             | 1.1.7   | SMC chip emulation                       |
+| VoodooRMI              | 1.1     | Trackpad driver                          |
+| VoodooSMBUS            | 3.0 dev | SMBUS driver                             |
+| VoodooPS2Controller    | 2.1.6   | Enable keyboard                          |
+| WhateverGreen          | 1.4.3   | Graphics                                 |
 
 ## ACPI patches
 
@@ -135,11 +134,12 @@ Then do the following BIOS settings:
 Now you can install macOS on your APFS or HFS+ formatted drive.
 
 ## Post-install
+
 - [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
-- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. Big Sur compatibility not confirmed 
+- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. Big Sur compatibility not confirmed
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 - (Optional) [Monitor Control](https://github.com/MonitorControl/MonitorControl) to adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI
