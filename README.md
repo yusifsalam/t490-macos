@@ -20,7 +20,7 @@ Currently running:
 
 | Component | Model                                   |
 | --------- | --------------------------------------- |
-| CPU       | Intel i5-8265U/i7-8565U Whiskey/Coffee Lake |
+| CPU       | Intel i5-8265U/i7-8565U Whiskey Lake    |
 | Memory    | 16GB/32GB 2400Mhz                       |
 | Storage   | WDC PC SN720 512GB                      |
 | Display   | 14" non-touch 1920x1080                 |
