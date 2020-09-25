@@ -20,7 +20,7 @@ Currently running:
 
 | Component | Model                                   |
 | --------- | --------------------------------------- |
-| CPU       | Intel i5/i7-8265U Whiskey Lake          |
+| CPU       | Intel i5-8265U/i7-8565U Whiskey/Coffee Lake |
 | Memory    | 16GB/32GB 2400Mhz                       |
 | Storage   | WDC PC SN720 512GB                      |
 | Display   | 14" non-touch 1920x1080                 |
@@ -38,7 +38,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 - [x] Keyboard. Volume control natively, brightness control with software
 - [x] Battery indicator
-- [x] Display auto-brightness
+- [x] Display auto brightness
 - [x] Audio
 - [x] Ethernet
 - [x] iCloud services - iMessage, FaceTime, AppStore
@@ -77,13 +77,14 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version | Remark                                   |
 | ---------------------- | ------- | ---------------------------------------- |
-| AirportItlwm           | 1.1.0   | Native WiFi - limited speed, but stable. |
+| AirportItlwm           | 1.1.0   | Integrates Itlwm with native WiFi picker |
 | AppleALC               | 1.5.0   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.2   | Power management                         |
 | CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
+| itlwm                  | 1.1.0   | WiFi kext                                |
 | Lilu                   | 1.4.8   | Kext patcher                             |
 | NoTouchID              | 1.0.4   | Disable TouchID                          |
 | NVMEFix                | 1.0.4   | Fix for NVME SSDs                        |
