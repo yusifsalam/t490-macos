@@ -118,6 +118,14 @@
 				<key>Enabled</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-ALS0.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ALS0.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -498,11 +506,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>alc-layout-id</key>
-				<data>CwAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>disable-external-gpu</key>
