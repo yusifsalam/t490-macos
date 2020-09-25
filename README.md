@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest itlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 
 Currently running:
@@ -20,8 +20,8 @@ Currently running:
 
 | Component | Model                                   |
 | --------- | --------------------------------------- |
-| CPU       | Intel i5-8265U Whiskey Lake             |
-| Memory    | 16GB 2400Mhz                            |
+| CPU       | Intel i5-8265U/i7-8565U Whiskey Lake    |
+| Memory    | 16GB/32GB 2400Mhz                       |
 | Storage   | WDC PC SN720 512GB                      |
 | Display   | 14" non-touch 1920x1080                 |
 | GPU       | Intel UHD 620                           |
@@ -38,6 +38,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 - [x] Keyboard. Volume control natively, brightness control with software
 - [x] Battery indicator
+- [x] Display auto brightness
 - [x] Audio
 - [x] Ethernet
 - [x] iCloud services - iMessage, FaceTime, AppStore
@@ -76,7 +77,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version | Remark                                   |
 | ---------------------- | ------- | ---------------------------------------- |
-| AirportItlwm           | 1.1.0 a | Integrates Itlwm with native WiFi picker |
+| AirportItlwm           | 1.1.0   | Integrates Itlwm with native WiFi picker |
 | AppleALC               | 1.5.0   | Fixes onboard audio                      |
 | CPUFriend              | 1.2.2   | Power management                         |
 | CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
@@ -103,6 +104,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Patch                 | Remark                         |
 | --------------------- | ------------------------------ |
+| SSDT-ALS0             | Fix display auto brightness    |
 | SSDT-AWAC             | Fix AWAC                       |
 | SSDT-BAT              | Fix battery indicator          |
 | SSDT-EXT1-FixShutdown | Fix shutdown on reboot         |
