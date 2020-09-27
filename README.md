@@ -36,7 +36,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Working
 
-- [x] Keyboard. Volume control natively, brightness control with software
+- [x] Keyboard. Volume and brightness control keys
 - [x] Battery indicator
 - [x] Display auto brightness
 - [x] Audio
@@ -141,10 +141,10 @@ Now you can install macOS on your APFS or HFS+ formatted drive.
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
-- Install [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) for brightness keys (and other keyboard rebindings). I recommend applying changes only to the keyboard, since I've had some conflicts with my Logitech mouse. Big Sur compatibility not confirmed
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 - (Optional) [Monitor Control](https://github.com/MonitorControl/MonitorControl) to adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI
+- (Optional) [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) to rebind key presses
 
 ## CREDITS
 
