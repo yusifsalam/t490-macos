@@ -118,12 +118,20 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-PTSWAK           | Fix sleep issues               |
 | SSDT-SBUS-MCHC        | SBUS fix                       |
 | SSDT-USBX             | USBX patch                     |
+| SSDT-BKey             | Fix display brightness keys    |
 
-## Pre-Install & BIOS settings
 
-First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update to the latest firmware (the easiest way is to use fwupd on linux).
+## Pre-Install: Creating the installation USB stick
 
-Then do the following BIOS settings:
+First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update the laptop to the latest BIOS firmware from your existing OS (the easiest way is to use fwupd on linux). Once using MacOS, it's a bit more complicated to update the BIOS.
+
+
+## Getting a valid Mac serial key
+
+- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (this config.plist does not have one) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! Follow the link to generate a serial and update directly the config.plist. We use the SMBIOS *MacBookPro15,4* as it is the closest Mac to our internal hardware.
+
+
+## Compatible BIOS settings
 
 - Disable secure chip
 - Enable Intel Virtualization and VT-d
@@ -133,17 +141,15 @@ Then do the following BIOS settings:
 - Disable wake on LAN/thunderbolt
 - Set boot mode to UEFI only, disable CSM support
 
-Now you can install macOS on your APFS or HFS+ formatted drive.
+Now you can boot your USB stick and install macOS on your APFS or HFS+ formatted drive. If it fails to boot, double check again the settings in the BIOS.
 
 ## Post-install
 
-- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
-- (Optional) [Monitor Control](https://github.com/MonitorControl/MonitorControl) to adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI
 - (Optional) [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) to rebind key presses
 
 ## CREDITS
