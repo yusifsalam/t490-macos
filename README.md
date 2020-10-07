@@ -6,15 +6,14 @@ This repo contains information for getting macOS 10.15 Catalina working on a Len
 
 The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
-
 Currently running:
 
-| Component      | Version           |
-| -------------- | ----------------- |
-| macOS Catalina | 10.15.7 (19H2)    |
-| OpenCore       | 0.6.1             |
-| BIOS version   | 1.69              |
-| EC version     | 1.22              |
+| Component      | Version        |
+| -------------- | -------------- |
+| macOS Catalina | 10.15.7 (19H2) |
+| OpenCore       | 0.6.1          |
+| BIOS version   | 1.69           |
+| EC version     | 1.22           |
 
 ## Hardware info
 
@@ -75,30 +74,30 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ## Kexts
 
-| Kext                   | Version | Remark                                   |
-| ---------------------- | ------- | ---------------------------------------- |
-| AirportItlwm           | 1.1.0   | Integrates Itlwm with native WiFi picker |
-| AppleALC               | 1.5.0   | Fixes onboard audio                      |
-| CPUFriend              | 1.2.2   | Power management                         |
-| CPUFriendDataProvider  | -       | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.1.2   | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.1.2   | Companion for IntelBluetoothFirmware     |
-| IntelMausiEthernet     | 2.5.1d1 | Fixes ethernet                           |
-| itlwm                  | 1.1.0   | WiFi kext                                |
-| Lilu                   | 1.4.8   | Kext patcher                             |
-| NoTouchID              | 1.0.4   | Disable TouchID                          |
-| NVMEFix                | 1.0.4   | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.1.7   | Battery indicator                        |
-| SMCLightSensor         | 1.1.7   | Ambient light sensor                     |
-| SMCProcessor           | 1.1.7   | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.7   | Monitor fan speed, not working           |
-| USBInjectAll           | 0.7.5   | Inject all USB, only for troubleshooting |
-| USBMap                 | -       | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.7   | SMC chip emulation                       |
-| VoodooRMI              | 1.1     | Trackpad driver                          |
-| VoodooSMBUS            | 3.0 dev | SMBUS driver                             |
-| VoodooPS2Controller    | 2.1.6   | Enable keyboard                          |
-| WhateverGreen          | 1.4.3   | Graphics                                 |
+| Kext                   | Version     | Remark                                   |
+| ---------------------- | ----------- | ---------------------------------------- |
+| AirportItlwm           | 1.2.0 alpha | Integrates Itlwm with native WiFi picker |
+| AppleALC               | 1.5.0       | Fixes onboard audio                      |
+| CPUFriend              | 1.2.2       | Power management                         |
+| CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
+| IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
+| IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
+| itlwm                  | 1.1.0       | WiFi kext                                |
+| Lilu                   | 1.4.8       | Kext patcher                             |
+| NoTouchID              | 1.0.4       | Disable TouchID                          |
+| NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
+| SMCBatteryManager      | 1.1.7       | Battery indicator                        |
+| SMCLightSensor         | 1.1.7       | Ambient light sensor                     |
+| SMCProcessor           | 1.1.7       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.7       | Monitor fan speed, not working           |
+| USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
+| USBMap                 | -           | Inject only mapped USB                   |
+| VirtualSMC             | 1.1.7       | SMC chip emulation                       |
+| VoodooRMI              | 1.1         | Trackpad driver                          |
+| VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
+| VoodooPS2Controller    | 2.1.6       | Enable keyboard                          |
+| WhateverGreen          | 1.4.3       | Graphics                                 |
 
 ## ACPI patches
 
