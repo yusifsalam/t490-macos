@@ -77,7 +77,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
 | AirportItlwm           | 1.2.0 alpha | Integrates Itlwm with native WiFi picker |
-| AppleALC               | 1.5.0       | Fixes onboard audio                      |
+| AppleALC               | 1.5.3       | Fixes onboard audio                      |
 | CPUFriend              | 1.2.2       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
