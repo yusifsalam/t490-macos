@@ -1,6 +1,6 @@
 # Lenovo T490 macOS with OpenCore
 
-### Status: beta
+### Status: WIP
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
@@ -36,7 +36,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Working
 
-- [x] Keyboard (supported: volume, keyboard backlight and display brightness keys)
+- [x] Keyboard (including native keys' control of volume, keyboard backlight and display brightness)
 - [x] Battery indicator
 - [x] Display auto brightness
 - [x] Audio
