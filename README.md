@@ -84,20 +84,20 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
 | itlwm                  | 1.1.0       | WiFi kext                                |
-| Lilu                   | 1.4.8       | Kext patcher                             |
+| Lilu                   | 1.4.9       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.1.7       | Battery indicator                        |
-| SMCLightSensor         | 1.1.7       | Ambient light sensor                     |
-| SMCProcessor           | 1.1.7       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.7       | Monitor fan speed, not working           |
+| SMCBatteryManager      | 1.1.8       | Battery indicator                        |
+| SMCLightSensor         | 1.1.8       | Ambient light sensor                     |
+| SMCProcessor           | 1.1.8       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.8       | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.7       | SMC chip emulation                       |
+| VirtualSMC             | 1.1.8       | SMC chip emulation                       |
 | VoodooRMI              | 1.2         | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.1.6       | Enable keyboard                          |
-| WhateverGreen          | 1.4.3       | Graphics                                 |
+| WhateverGreen          | 1.4.4       | Graphics                                 |
 
 ## ACPI patches
 
