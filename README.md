@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
 
-The compatibility is good for the most part, most of the stuff works like it would on a real macbook, including camera, audio, trackpad, iCloud services. The experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life isn't great (from personal experience Arch Linux is better and Windows 10 the best of the three), but that can probably be fixed with undervolting. The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 Currently running:
 
@@ -35,7 +35,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Working
 
-- [x] Keyboard. Volume and brightness control keys
+- [x] Keyboard (including native keys' control of volume, keyboard backlight and display brightness)
 - [x] Battery indicator
 - [x] Display auto brightness
 - [x] Audio
@@ -117,32 +117,39 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-PTSWAK           | Fix sleep issues               |
 | SSDT-SBUS-MCHC        | SBUS fix                       |
 | SSDT-USBX             | USBX patch                     |
+| SSDT-BKey             | Fix display brightness keys    |
 
-## Pre-Install & BIOS settings
 
-First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update to the latest firmware (the easiest way is to use fwupd on linux).
+## Pre-Install: Creating the installation USB stick
 
-Then do the following BIOS settings:
+First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update your laptop to the latest BIOS firmware from your existing OS (the easiest way is to use fwupd on linux). Once using MacOS, you can do future updates to your bios using a Live USB Linux distro.
+
+
+## Getting a valid Mac serial key
+
+- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (the config.plist in this repository does not have one as all Mac devices - including hackintosh - need a unique serial) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! To generate a serial and update directly the config.plist, you can use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). We use SMBIOS *MacBookPro15,4* as it is the closest Mac to our internal hardware.
+
+
+## Compatible BIOS settings
 
 - Disable secure chip
 - Enable Intel Virtualization and VT-d
-- Disable secure boot and fast boot
+- Disable secure boot and Fast boot
 - Disable Intel SGX control
 - Disable Device Guard
-- Disable wake on LAN/thunderbolt
-- Set boot mode to UEFI only, disable CSM support
+- Disable wake on LAN/Thunderbolt
+- Set boot mode to UEFI only
+- Disable CSM support
 
-Now you can install macOS on your APFS or HFS+ formatted drive.
+Now you can boot your USB stick. If it fails to boot, try a different USB stick, double check your BIOS settings. If that does not work, report an issue here so we can help you. If it boots - be patient, it takes a while - install macOS on your APFS or HFS+ formatted drive. Use the installer Disk Utility to format your SSD so you can select it for the installation.
 
 ## Post-install
 
-- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage or FaceTime.
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
-- (Optional) [Monitor Control](https://github.com/MonitorControl/MonitorControl) to adjust brightness/contrast controls for internal+external displays (DP/USB-C/HDMI
 - (Optional) [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) to rebind key presses
 
 ## CREDITS
