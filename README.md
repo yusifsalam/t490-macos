@@ -78,6 +78,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | ---------------------- | ----------- | ---------------------------------------- |
 | AirportItlwm           | 1.2.0 alpha | Integrates Itlwm with native WiFi picker |
 | AppleALC               | 1.5.3       | Fixes onboard audio                      |
+| BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
 | CPUFriend              | 1.2.2       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
@@ -117,18 +118,14 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-PTSWAK           | Fix sleep issues               |
 | SSDT-SBUS-MCHC        | SBUS fix                       |
 | SSDT-USBX             | USBX patch                     |
-| SSDT-BKey             | Fix display brightness keys    |
-
 
 ## Pre-Install: Creating the installation USB stick
 
 First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update your laptop to the latest BIOS firmware from your existing OS (the easiest way is to use fwupd on linux). Once using MacOS, you can do future updates to your bios using a Live USB Linux distro.
 
-
 ## Getting a valid Mac serial key
 
-- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (the config.plist in this repository does not have one as all Mac devices - including hackintosh - need a unique serial) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! To generate a serial and update directly the config.plist, you can use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). We use SMBIOS *MacBookPro15,4* as it is the closest Mac to our internal hardware.
-
+- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (the config.plist in this repository does not have one as all Mac devices - including hackintosh - need a unique serial) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! To generate a serial and update directly the config.plist, you can use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). We use SMBIOS _MacBookPro15,4_ as it is the closest Mac to our internal hardware.
 
 ## Compatible BIOS settings
 
