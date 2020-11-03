@@ -116,7 +116,6 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-PLUG             | x86 plugin injection fix       |
 | SSDT-PNLF-CFL         | Backlight fix                  |
 | SSDT-PTSWAK           | Fix sleep issues               |
-| SSDT-SBUS-MCHC        | SBUS fix                       |
 | SSDT-USBX             | USBX patch                     |
 
 ## Pre-Install: Creating the installation USB stick
