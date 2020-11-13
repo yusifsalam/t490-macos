@@ -2,18 +2,18 @@
 
 ### Status: WIP
 
-This repo contains information for getting macOS 10.15 Catalina working on a Lenovo T490 laptop.
+This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
-The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS Catalina. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 Currently running:
 
-| Component      | Version        |
-| -------------- | -------------- |
-| macOS Catalina | 10.15.7 (19H15) |
-| OpenCore       | 0.6.3          |
-| BIOS version   | 1.69           |
-| EC version     | 1.22           |
+| Component     | Version        |
+| ------------- | -------------- |
+| macOS version | 11.0.1 (20B29) |
+| OpenCore      | 0.6.3          |
+| BIOS version  | 1.69           |
+| EC version    | 1.22           |
 
 ## Hardware info
 
