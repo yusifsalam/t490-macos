@@ -4,7 +4,7 @@
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
-The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 50/10 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 80/15 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 Currently running:
 
@@ -76,7 +76,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
-| AirportItlwm           | 1.2.0 alpha | Integrates Itlwm with native WiFi picker |
+| AirportItlwm           | 1.2.0 alpha | WiFi kext                                |
 | AppleALC               | 1.5.4       | Fixes onboard audio                      |
 | BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
 | CPUFriend              | 1.2.2       | Power management                         |
@@ -84,7 +84,6 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| itlwm                  | 1.1.0       | WiFi kext                                |
 | Lilu                   | 1.4.9       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
