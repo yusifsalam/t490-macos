@@ -77,27 +77,27 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
 | AirportItlwm           | 1.2.0 alpha | WiFi kext                                |
-| AppleALC               | 1.5.4       | Fixes onboard audio                      |
+| AppleALC               | 1.5.5       | Fixes onboard audio                      |
 | BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
 | CPUFriend              | 1.2.2       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| Lilu                   | 1.4.9       | Kext patcher                             |
+| Lilu                   | 1.5.0       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.1.8       | Battery indicator                        |
-| SMCLightSensor         | 1.1.8       | Ambient light sensor                     |
-| SMCProcessor           | 1.1.8       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.8       | Monitor fan speed, not working           |
+| SMCBatteryManager      | 1.1.9       | Battery indicator                        |
+| SMCLightSensor         | 1.1.9       | Ambient light sensor                     |
+| SMCProcessor           | 1.1.9       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.1.9       | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.8       | SMC chip emulation                       |
+| VirtualSMC             | 1.1.9       | SMC chip emulation                       |
 | VoodooRMI              | 1.2         | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.1.6       | Enable keyboard                          |
-| WhateverGreen          | 1.4.4       | Graphics                                 |
+| WhateverGreen          | 1.4.5       | Graphics                                 |
 
 ## ACPI patches
 
