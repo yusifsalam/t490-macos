@@ -35,7 +35,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 ### Working
 
-- [x] Keyboard (including native keys' control of volume, keyboard backlight and display brightness)
+- [x] Keyboard (including all media keys)
 - [x] Battery indicator
 - [x] Display auto brightness
 - [x] Audio
@@ -98,6 +98,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.1.6       | Enable keyboard                          |
 | WhateverGreen          | 1.4.5       | Graphics                                 |
+| YogaSMC                | 1.3.1       | ACPI driver                              |
 
 ## ACPI patches
 
