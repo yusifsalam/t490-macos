@@ -144,6 +144,7 @@ Now you can boot your USB stick. If it fails to boot, try a different USB stick,
 - Disable hibernation, since it doesn't work properly on hackintoshes
 - Make your own USB map kext
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
+- (Optional) [YogaSMCNC and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) to control YogaSMC
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 - (Optional) [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) to rebind key presses
@@ -156,6 +157,7 @@ Now you can boot your USB stick. If it fails to boot, try a different USB stick,
 - [CorpNewt's tools](https://github.com/corpnewt)
 - [OpenWireless and itlwm](https://github.com/OpenIntelWireless/itlwm)
 - [VoodooRMI](https://github.com/VoodooSMBus/VoodooRMI)
+- [YogaSMC](https://github.com/zhen-zen/YogaSMC)
 - [Daliansky's OC-little repo](https://github.com/daliansky/OC-little)
 - [Tyler Nguyen's x1c-hackintosh repo](https://github.com/tylernguyen/x1c6-hackintosh)
 - [Vojtěch Jungmann's T480-OpenCore-Hackintosh repo](https://github.com/EETagent/T480-OpenCore-Hackintosh)
