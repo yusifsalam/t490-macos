@@ -10,7 +10,7 @@ Currently running:
 
 | Component     | Version        |
 | ------------- | -------------- |
-| macOS version | 11.0.1 (20B29) |
+| macOS version | 11.1 (20C69) |
 | OpenCore      | 0.6.4          |
 | BIOS version  | 1.70           |
 | EC version    | 1.22           |
