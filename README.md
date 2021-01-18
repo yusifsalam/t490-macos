@@ -11,7 +11,7 @@ Currently running:
 | Component     | Version        |
 | ------------- | -------------- |
 | macOS version | 11.1 (20C69)   |
-| OpenCore      | 0.6.4          |
+| OpenCore      | 0.6.5          |
 | BIOS version  | 1.71           |
 | EC version    | 1.23           |
 
@@ -76,17 +76,17 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
-| AirportItlwm           | 1.2.0 alpha | WiFi kext                                |
-| AppleALC               | 1.5.5       | Fixes onboard audio                      |
+| AirportItlwm           | 1.3.0 alpha | WiFi kext                                |
+| AppleALC               | 1.5.6       | Fixes onboard audio                      |
 | BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
-| CPUFriend              | 1.2.2       | Power management                         |
+| CPUFriend              | 1.2.3       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
 | Lilu                   | 1.5.0       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
-| NVMEFix                | 1.0.4       | Fix for NVME SSDs                        |
+| NVMEFix                | 1.0.5       | Fix for NVME SSDs                        |
 | SMCBatteryManager      | 1.1.9       | Battery indicator                        |
 | SMCLightSensor         | 1.1.9       | Ambient light sensor                     |
 | SMCProcessor           | 1.1.9       | CPU temp monitoring                      |
@@ -94,10 +94,10 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
 | VirtualSMC             | 1.1.9       | SMC chip emulation                       |
-| VoodooRMI              | 1.2         | Trackpad driver                          |
+| VoodooRMI              | 1.3         | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
-| VoodooPS2Controller    | 2.1.6       | Enable keyboard                          |
-| WhateverGreen          | 1.4.5       | Graphics                                 |
+| VoodooPS2Controller    | 2.2.0       | Enable keyboard                          |
+| WhateverGreen          | 1.4.6       | Graphics                                 |
 | YogaSMC                | 1.4.1       | ACPI driver                              |
 
 ## ACPI patches
