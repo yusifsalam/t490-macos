@@ -8,12 +8,12 @@ The compatibility is very good for the most part, and it behaves as a real Macbo
 
 Currently running:
 
-| Component     | Version        |
-| ------------- | -------------- |
-| macOS version | 11.1 (20C69)   |
-| OpenCore      | 0.6.5          |
-| BIOS version  | 1.71           |
-| EC version    | 1.23           |
+| Component     | Version      |
+| ------------- | ------------ |
+| macOS version | 11.1 (20C69) |
+| OpenCore      | 0.6.5        |
+| BIOS version  | 1.71         |
+| EC version    | 1.23         |
 
 ## Hardware info
 
@@ -94,7 +94,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
 | VirtualSMC             | 1.1.9       | SMC chip emulation                       |
-| VoodooRMI              | 1.3         | Trackpad driver                          |
+| VoodooRMI              | 1.3.1       | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.2.0       | Enable keyboard                          |
 | WhateverGreen          | 1.4.6       | Graphics                                 |
