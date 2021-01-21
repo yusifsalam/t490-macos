@@ -1,10 +1,11 @@
 # Lenovo T490 macOS with OpenCore
 
 ### Status: WIP
+#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that. Feel free to fork this repo if you want to see this project live on!   
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
-The compatibility is very good for the most part, and it behaves as a real Macbook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 80/15 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is very good for the most part, and it behaves as a real MacBook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 80/15 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 Currently running:
 
