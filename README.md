@@ -1,7 +1,8 @@
 # Lenovo T490 macOS with OpenCore
 
 ### Status: WIP
-#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that. Feel free to fork this repo if you want to see this project live on!   
+
+#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that. Feel free to fork this repo if you want to see this project live on!
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
@@ -111,12 +112,12 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-EXT1-FixShutdown | Fix shutdown on reboot         |
 | SSDT-EXT3-LedReset-TP | Fix LED not working after wake |
 | SSDT-EXT4-WakeScreen  | Fix screen not waking          |
-| SSDT-GPIO             | Trackpad fix                   |
 | SSDT-GPRW             | Fix immediate wake after sleep |
 | SSDT-HPET             | Fix irq conflicts              |
 | SSDT-PLUG             | x86 plugin injection fix       |
 | SSDT-PNLF-CFL         | Backlight fix                  |
 | SSDT-PTSWAK           | Fix sleep issues               |
+| SSDT-THINK            | YogaSMC helper                 |
 | SSDT-USBX             | USBX patch                     |
 
 ## Pre-Install: Creating the installation USB stick
