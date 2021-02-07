@@ -5,7 +5,7 @@
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
-The compatibility is very good for the most part, and it behaves as a real MacBook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional albeit not operating at full speeds - I am getting 80/15 mbit up/down on a 200/20 connection, which is fine for most use cases. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
+The compatibility is very good for the most part, and it behaves as a real MacBook Pro, including camera, audio, trackpad, iCloud services. In general, the experience is pleasant, as the laptop is smooth and responsive under macOS. Battery life is acceptable (around 6h with the brightness set to half). The Intel WiFi card is soldered onto the motherboard, which means it can't be replaced with a Broadcom one, but the Intel card is now functional - I am getting 150/20 mbit up/down on a 200/20 connection. With the latest AirportItlwm kext even Handoff and continuity features are working, except for AirDrop.
 
 Currently running:
 
@@ -78,28 +78,28 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
 | AirportItlwm           | 1.3.0 alpha | WiFi kext                                |
-| AppleALC               | 1.5.6       | Fixes onboard audio                      |
+| AppleALC               | 1.5.7       | Fixes onboard audio                      |
 | BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
 | CPUFriend              | 1.2.3       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
 | IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
 | IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| Lilu                   | 1.5.0       | Kext patcher                             |
+| Lilu                   | 1.5.1       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.5       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.1.9       | Battery indicator                        |
-| SMCLightSensor         | 1.1.9       | Ambient light sensor                     |
-| SMCProcessor           | 1.1.9       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.1.9       | Monitor fan speed, not working           |
+| SMCBatteryManager      | 1.2.0       | Battery indicator                        |
+| SMCLightSensor         | 1.2.0       | Ambient light sensor                     |
+| SMCProcessor           | 1.2.0       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.2.0       | Monitor fan speed, not working           |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.1.9       | SMC chip emulation                       |
+| VirtualSMC             | 1.2.0       | SMC chip emulation                       |
 | VoodooRMI              | 1.3.1       | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
-| VoodooPS2Controller    | 2.2.0       | Enable keyboard                          |
-| WhateverGreen          | 1.4.6       | Graphics                                 |
-| YogaSMC                | 1.4.1       | ACPI driver                              |
+| VoodooPS2Controller    | 2.2.1       | Enable keyboard                          |
+| WhateverGreen          | 1.4.7       | Graphics                                 |
+| YogaSMC                | 1.4.2       | ACPI driver                              |
 
 ## ACPI patches
 
