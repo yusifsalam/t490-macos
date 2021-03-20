@@ -1333,29 +1333,14 @@
 				<key>Auxiliary</key>
 				<false/>
 				<key>Comment</key>
-				<string></string>
+				<string>Ubuntu in the same NVM.E as MacOS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>Arch</string>
+				<string>Ubuntu</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,87-C0-C3-44-8B-44-1B-00)/HD(2,GPT,0BA84AC6-FA6D-4945-ACC6-D865DCF5F680,0xD7000,0x6C000)/\EFI\systemd\systemd-bootx64.efi</string>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>Win10</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,87-C0-C3-44-8B-44-1B-00)/HD(2,GPT,0BA84AC6-FA6D-4945-ACC6-D865DCF5F680,0xD7000,0x6C000)/\EFI\Microsoft\Boot\bootmgr.efi</string>
+				<string>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,55-00-20-20-46-A7-79-64)/HD(3,GPT,A2594621-AF8C-45DF-A60A-8D0F7D7CA05A,0x1DD3A800,0x106000)/\EFI\ubuntu\grubx64.efi
+</string>
 				<key>TextMode</key>
 				<false/>
 			</dict>
@@ -1486,7 +1471,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>XXXXXXXXXXXXXXXXX</string>
+			<string>FVF0244054N0000UE</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1498,9 +1483,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>XXXXXXXXXXXX</string>
+			<string>FVFCVXZ1L40Y</string>
 			<key>SystemUUID</key>
-			<string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+			<string>FA3A78AA-2B29-4ABE-A3D2-2B058B2BF15D</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1541,7 +1526,7 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<string>Disabled</string>
+			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
