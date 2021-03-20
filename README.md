@@ -12,8 +12,8 @@ Currently running:
 
 | Component     | Version      |
 | ------------- | ------------ |
-| macOS version | 11.2 (20D64) |
-| OpenCore      | 0.6.5        |
+| macOS version | 11.2.3(xxxx) |
+| OpenCore      | 0.6.7        |
 | BIOS version  | 1.71         |
 | EC version    | 1.23         |
 
@@ -23,8 +23,8 @@ Currently running:
 | --------- | --------------------------------------- |
 | CPU       | Intel i5-8265U/i7-8565U Whiskey Lake    |
 | Memory    | 16GB/32GB 2400Mhz                       |
-| Storage   | WDC PC SN720 512GB                      |
-| Display   | 14" non-touch 1920x1080                 |
+| Storage   | Reletech P400 M.2 NVMe 2280 SSD         |
+| Display   | 14" touch 1920x1080.                    |
 | GPU       | Intel UHD 620                           |
 | Camera    | 720p with Windows Hello IR sensor       |
 | WLAN      | Intel Wireless-AC 9560 2x2ac with BT5.0 |
