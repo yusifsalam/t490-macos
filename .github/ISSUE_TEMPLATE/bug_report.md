@@ -1,23 +1,25 @@
 ---
 name: Bug report
 about: Report any bugs you encounter
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
+
+**_All fields are mandatory._**
 
 **Describe the bug**
 A clear and concise description of what the bug is.
 
 **Hardware**
-List your parts similar to the main README. 
+List your parts similar to the main README.
 
 **Software and firmware**
-macOS version, BIOS/EC version, OpenCore version. 
+macOS version, BIOS/EC version, OpenCore version.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
