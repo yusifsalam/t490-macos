@@ -2,7 +2,7 @@
 
 ### Status: WIP
 
-#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that. 
+#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that.
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
@@ -10,12 +10,12 @@ The compatibility is very good for the most part, and it behaves as a real MacBo
 
 Currently running:
 
-| Component     | Version      |
-| ------------- | ------------ |
-| macOS version | 11.4       |
-| OpenCore      | 0.6.5        |
-| BIOS version  | 1.73         |
-| EC version    | 1.23         |
+| Component     | Version |
+| ------------- | ------- |
+| macOS version | 11.4    |
+| OpenCore      | 0.7.1   |
+| BIOS version  | 1.73    |
+| EC version    | 1.23    |
 
 ## Hardware info
 
@@ -78,29 +78,29 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
-| AirportItlwm           | 1.3.0 alpha | WiFi kext                                |
-| AppleALC               | 1.5.7       | Fixes onboard audio                      |
-| BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
-| CPUFriend              | 1.2.3       | Power management                         |
+| AirportItlwm           | 2.0.0 alpha | WiFi kext                                |
+| AppleALC               | 1.6.2       | Fixes onboard audio                      |
+| BrightnessKeys         | 1.0.2       | Fix brightness keys                      |
+| CPUFriend              | 1.2.4       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
+| IntelBluetoothFirmware | 1.1.3       | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.3       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| Lilu                   | 1.5.1       | Kext patcher                             |
+| Lilu                   | 1.5.4       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
-| NVMEFix                | 1.0.5       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.2.0       | Battery indicator                        |
-| SMCLightSensor         | 1.2.0       | Ambient light sensor                     |
-| SMCProcessor           | 1.2.0       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.2.0       | Monitor fan speed                        |
+| NVMEFix                | 1.0.9       | Fix for NVME SSDs                        |
+| SMCBatteryManager      | 1.2.5       | Battery indicator                        |
+| SMCLightSensor         | 1.2.5       | Ambient light sensor                     |
+| SMCProcessor           | 1.2.5       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.2.5       | Monitor fan speed                        |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.2.0       | SMC chip emulation                       |
-| VoodooRMI              | 1.3.1       | Trackpad driver                          |
+| VirtualSMC             | 1.2.5       | SMC chip emulation                       |
+| VoodooRMI              | 1.3.3       | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.2.1       | Enable keyboard                          |
-| WhateverGreen          | 1.4.7       | Graphics                                 |
-| YogaSMC                | 1.4.2       | ACPI driver                              |
+| WhateverGreen          | 1.5.1       | Graphics                                 |
+| YogaSMC                | 1.5.1       | ACPI driver                              |
 
 ## ACPI patches
 
@@ -144,6 +144,7 @@ Now you can boot from your USB stick. If it fails to boot, try a different USB s
 ## Post install
 
 - Disable hibernation, since it doesn't work properly on hackintoshes
+
 ```
 sudo pmset autopoweroff 0
 sudo pmset powernap 0
@@ -151,13 +152,14 @@ sudo pmset standby 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
+
 - [Make your own USB map kext](https://dortania.github.io/OpenCore-Post-Install/usb/)
 - Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
-- Install [YogaSMCNC and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) to control fans, battery, leds and more 
+- Install [YogaSMCNC and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) to control fans, battery, leds and more
 - (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management similar to Windows (but better)
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
 
-For how to update OpenCore and kexts, read [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#_5-boot). Personally, I use MountEFI to mount EFI partitions, ProperTree to edit plist files, and OCConfigCompare to compare my config files to the latest sample configs from OpenCore. I also always test drive my updated EFI with a USB stick before moving it to the EFI partition of the main SSD.  
+For how to update OpenCore and kexts, read [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#_5-boot). Personally, I use MountEFI to mount EFI partitions, ProperTree to edit plist files, and OCConfigCompare to compare my config files to the latest sample configs from OpenCore. I also always test drive my updated EFI with a USB stick before moving it to the EFI partition of the main SSD.
 
 ## CREDITS
 
