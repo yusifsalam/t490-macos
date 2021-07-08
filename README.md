@@ -2,7 +2,7 @@
 
 ### Status: WIP
 
-#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that. Feel free to fork this repo if you want to see this project live on!
+#### Update: This project will no longer be actively maintained, since I recently got an M1 MacBook. I may still update OpenCore and the kexts every once in a while but no promises about that.
 
 This repo contains information for getting macOS 11 Big Sur working on a Lenovo T490 laptop.
 
@@ -10,12 +10,12 @@ The compatibility is very good for the most part, and it behaves as a real MacBo
 
 Currently running:
 
-| Component     | Version      |
-| ------------- | ------------ |
-| macOS version | 11.2.3(xxxx) |
-| OpenCore      | 0.6.7        |
-| BIOS version  | 1.71         |
-| EC version    | 1.23         |
+| Component     | Version |
+| ------------- | ------- |
+| macOS version | 11.4    |
+| OpenCore      | 0.7.1   |
+| BIOS version  | 1.73    |
+| EC version    | 1.23    |
 
 ## Hardware info
 
@@ -31,7 +31,7 @@ Currently running:
 | Battery   | Single 3-cell 50Wh                      |
 | Touchpad  | Synaptics TM3471-010                    |
 
-Note on NVME storage: Samsung PM981 drives will not work out of the box if at all, consider replacing the drive if you have one ([issue](https://github.com/yusifsalam/t490-macos/issues/3))
+Note on NVME storage: Samsung PM981 drives will not work out of the box if at all, consider replacing the drive if you have one.
 
 ## Status
 
@@ -42,7 +42,7 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 - [x] Display auto brightness
 - [x] Audio
 - [x] Ethernet
-- [x] iCloud services - iMessage, FaceTime, AppStore
+- [x] iCloud services - iMessage, FaceTime, iCloud Drive
 - [x] GPU acceleration
 - [x] Camera
 - [x] Microphone
@@ -78,29 +78,29 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
-| AirportItlwm           | 1.3.0 alpha | WiFi kext                                |
-| AppleALC               | 1.5.7       | Fixes onboard audio                      |
-| BrightnessKeys         | 1.0.1       | Fix brightness keys                      |
-| CPUFriend              | 1.2.3       | Power management                         |
+| AirportItlwm           | 2.0.0 alpha | WiFi kext                                |
+| AppleALC               | 1.6.2       | Fixes onboard audio                      |
+| BrightnessKeys         | 1.0.2       | Fix brightness keys                      |
+| CPUFriend              | 1.2.4       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.1.2       | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.1.2       | Companion for IntelBluetoothFirmware     |
+| IntelBluetoothFirmware | 1.1.3       | Fixes bluetooth                          |
+| IntelBluetoothInjector | 1.1.3       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| Lilu                   | 1.5.1       | Kext patcher                             |
+| Lilu                   | 1.5.4       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
-| NVMEFix                | 1.0.5       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.2.0       | Battery indicator                        |
-| SMCLightSensor         | 1.2.0       | Ambient light sensor                     |
-| SMCProcessor           | 1.2.0       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.2.0       | Monitor fan speed, not working           |
+| NVMEFix                | 1.0.9       | Fix for NVME SSDs                        |
+| SMCBatteryManager      | 1.2.5       | Battery indicator                        |
+| SMCLightSensor         | 1.2.5       | Ambient light sensor                     |
+| SMCProcessor           | 1.2.5       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.2.5       | Monitor fan speed                        |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.2.0       | SMC chip emulation                       |
-| VoodooRMI              | 1.3.1       | Trackpad driver                          |
+| VirtualSMC             | 1.2.5       | SMC chip emulation                       |
+| VoodooRMI              | 1.3.3       | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
 | VoodooPS2Controller    | 2.2.1       | Enable keyboard                          |
-| WhateverGreen          | 1.4.7       | Graphics                                 |
-| YogaSMC                | 1.4.2       | ACPI driver                              |
+| WhateverGreen          | 1.5.1       | Graphics                                 |
+| YogaSMC                | 1.5.1       | ACPI driver                              |
 
 ## ACPI patches
 
@@ -120,13 +120,13 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | SSDT-THINK            | YogaSMC helper                 |
 | SSDT-USBX             | USBX patch                     |
 
-## Pre-Install: Creating the installation USB stick
+## Pre-install: Creating the installation USB stick
 
-First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update your laptop to the latest BIOS firmware from your existing OS (the easiest way is to use fwupd on linux). Once using MacOS, you can do future updates to your bios using a Live USB Linux distro.
+First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-Guide/). The guide will take you through the creation of installation USB and drive formatting. Update your laptop to the latest BIOS firmware from your existing OS (the easiest way is to use fwupd on linux).
 
 ## Getting a valid Mac serial key
 
-- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (the config.plist in this repository does not have one as all Mac devices - including hackintosh - need a unique serial) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! To generate a serial and update directly the config.plist, you can use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). We use SMBIOS _MacBookPro15,4_ as it is the closest Mac to our internal hardware.
+- [Fix iServices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) if you want to use iMessage, FaceTime, iCloud. You need a valid, unique Mac serial key (the config.plist in this repository does not have one as all Mac devices - including hackintosh - need a unique serial) to be able to use Apple's cloud services and authentication. If you don't, you won't be able to login with an Apple ID, thus no App Store either! To generate a serial and update directly the config.plist, you can use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Use SMBIOS _MacBookPro15,4_ as it is the closest MacBook to our internal hardware.
 
 ## Compatible BIOS settings
 
@@ -139,17 +139,27 @@ First, read the [Dortania OC guide](https://dortania.github.io/OpenCore-Install-
 - Set boot mode to UEFI only
 - Disable CSM support
 
-Now you can boot your USB stick. If it fails to boot, try a different USB stick, double check your BIOS settings. If that does not work, report an issue here so we can help you. If it boots - be patient, it takes a while - install macOS on your APFS or HFS+ formatted drive. Use the installer Disk Utility to format your SSD so you can select it for the installation.
+Now you can boot from your USB stick. If it fails to boot, try a different USB stick, double check your BIOS settings.
 
-## Post-install
+## Post install
 
 - Disable hibernation, since it doesn't work properly on hackintoshes
-- Make your own USB map kext
-- Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 800 MHz. (original author had it set to 500 MHz)
-- (Optional) [YogaSMCNC and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) to control YogaSMC
-- (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management
+
+```
+sudo pmset autopoweroff 0
+sudo pmset powernap 0
+sudo pmset standby 0
+sudo pmset proximitywake 0
+sudo pmset tcpkeepalive 0
+```
+
+- [Make your own USB map kext](https://dortania.github.io/OpenCore-Post-Install/usb/)
+- Generate your own CPU frequency vectors using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend). The one included here is set to Balance power and CPU lowest frequency set to 500 MHz
+- Install [YogaSMCNC and YogaSMCPane](https://github.com/zhen-zen/YogaSMC) to control fans, battery, leds and more
+- (Optional) [Rectangle](https://github.com/rxhanson/Rectangle) for window management similar to Windows (but better)
 - (Optional) [LuLu](https://github.com/objective-see/LuLu) for network traffic control
-- (Optional) [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) to rebind key presses
+
+For how to update OpenCore and kexts, read [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#_5-boot). Personally, I use MountEFI to mount EFI partitions, ProperTree to edit plist files, and OCConfigCompare to compare my config files to the latest sample configs from OpenCore. I also always test drive my updated EFI with a USB stick before moving it to the EFI partition of the main SSD.
 
 ## CREDITS
 
