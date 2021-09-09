@@ -12,8 +12,8 @@ Currently running:
 
 | Component     | Version |
 | ------------- | ------- |
-| macOS version | 11.4    |
-| OpenCore      | 0.7.1   |
+| macOS version | 11.5.2    |
+| OpenCore      | 0.7.3   |
 | BIOS version  | 1.73    |
 | EC version    | 1.23    |
 
@@ -79,27 +79,27 @@ Note on NVME storage: Samsung PM981 drives will not work out of the box if at al
 | Kext                   | Version     | Remark                                   |
 | ---------------------- | ----------- | ---------------------------------------- |
 | AirportItlwm           | 2.0.0 alpha | WiFi kext                                |
-| AppleALC               | 1.6.2       | Fixes onboard audio                      |
+| AppleALC               | 1.6.4       | Fixes onboard audio                      |
 | BrightnessKeys         | 1.0.2       | Fix brightness keys                      |
 | CPUFriend              | 1.2.4       | Power management                         |
 | CPUFriendDataProvider  | -           | Frequency vector for CPUFriend           |
-| IntelBluetoothFirmware | 1.1.3       | Fixes bluetooth                          |
-| IntelBluetoothInjector | 1.1.3       | Companion for IntelBluetoothFirmware     |
+| IntelBluetoothFirmware | 2.0.0       | Fixes bluetooth                          |
+| IntelBluetoothInjector | 2.0.0       | Companion for IntelBluetoothFirmware     |
 | IntelMausiEthernet     | 2.5.1d1     | Fixes ethernet                           |
-| Lilu                   | 1.5.4       | Kext patcher                             |
+| Lilu                   | 1.5.6       | Kext patcher                             |
 | NoTouchID              | 1.0.4       | Disable TouchID                          |
 | NVMEFix                | 1.0.9       | Fix for NVME SSDs                        |
-| SMCBatteryManager      | 1.2.5       | Battery indicator                        |
-| SMCLightSensor         | 1.2.5       | Ambient light sensor                     |
-| SMCProcessor           | 1.2.5       | CPU temp monitoring                      |
-| SMCSuperIO             | 1.2.5       | Monitor fan speed                        |
+| SMCBatteryManager      | 1.2.7       | Battery indicator                        |
+| SMCLightSensor         | 1.2.7       | Ambient light sensor                     |
+| SMCProcessor           | 1.2.7       | CPU temp monitoring                      |
+| SMCSuperIO             | 1.2.7       | Monitor fan speed                        |
 | USBInjectAll           | 0.7.5       | Inject all USB, only for troubleshooting |
 | USBMap                 | -           | Inject only mapped USB                   |
-| VirtualSMC             | 1.2.5       | SMC chip emulation                       |
+| VirtualSMC             | 1.2.7       | SMC chip emulation                       |
 | VoodooRMI              | 1.3.3       | Trackpad driver                          |
 | VoodooSMBUS            | 3.0 dev     | SMBUS driver                             |
-| VoodooPS2Controller    | 2.2.1       | Enable keyboard                          |
-| WhateverGreen          | 1.5.1       | Graphics                                 |
+| VoodooPS2Controller    | 2.2.5       | Enable keyboard                          |
+| WhateverGreen          | 1.5.3       | Graphics                                 |
 | YogaSMC                | 1.5.1       | ACPI driver                              |
 
 ## ACPI patches
